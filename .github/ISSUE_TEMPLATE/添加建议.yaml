@@ -1,8 +1,7 @@
 name: 添加建议
-about: 对目前项目给一些建议
+description: 对目前项目给一些建议
 title: "[feat]: "
 labels: '功能请求'
-assignees: ''
 body:
 - type: textarea
   attributes:
@@ -23,5 +22,8 @@ body:
 - type: checkboxes
   attributes:
     label: "我确认没有重复的issue"
+    options:
+      - label: "我确认没有重复的issue"
+        required: true
   validations:
-   required: true
+    required: true
