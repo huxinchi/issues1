@@ -2,7 +2,9 @@ name: 我发现了一个BUG！
 
 description: "反馈一个问题，若问题有多个请依次开启，重复反馈将关闭，不提供解决非项目问题"
 
-labels: ["type: bug"]
+labels: ["bug"]
+
+title: "[BUG]: "
 
 body:
   - type: input
@@ -12,28 +14,24 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: input
     id: browser
     attributes:
       label: 出现问题时所使用的浏览器
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-        - 系统浏览器
-        - Via
+      description: 请填写你使用的浏览器名称，如：Chrome/Firefox/Edge
+    validations:
+      required: true
 
   - type: dropdown
-    id: device
+    id: systemdevice
     attributes:
-      label: 出现问题时所使用的设备
+      label: 出现问题时所使用的系统
       multiple: true
       options:
-        - 手机
-        - 平板
-        - 电脑
+        - Android（包括安卓手机与平板）
+        - Windows
+        - iOS/iPadOS
+        - macOS
 
   - type: textarea
     id: what-happened
