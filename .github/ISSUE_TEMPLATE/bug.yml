@@ -14,6 +14,13 @@ body:
     validations:
       required: true
 
+  - type: checkboxes
+    attributes:
+      label: "我确认没有重复的issue"
+      options:
+      - label: "我确认没有重复的issue."
+        required: true
+
   - type: input
     id: browser
     attributes:
