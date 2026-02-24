@@ -32,6 +32,8 @@ body:
         - Windows
         - iOS/iPadOS
         - macOS
+    validations:
+      required: true
 
   - type: textarea
     id: what-happened
