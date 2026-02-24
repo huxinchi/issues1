@@ -23,7 +23,7 @@ body:
   attributes:
     label: "我确认没有重复的issue"
     options:
-      - label: "我确认没有重复的issue"
+      - label: "我确认没有重复的issue."
         required: true
   validations:
     required: true
