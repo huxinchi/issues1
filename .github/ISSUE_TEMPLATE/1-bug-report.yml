@@ -37,7 +37,8 @@ body:
       label: 出现问题时所使用的系统
       multiple: true
       options:
-        - Android（包括安卓手机与平板）
+        - Android（包括安卓手机与平板、鸿蒙OS2~4）
+        - HarmonyOS 5.0+
         - Windows
         - iOS/iPadOS
         - macOS
